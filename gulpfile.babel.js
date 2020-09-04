@@ -45,9 +45,9 @@ const requireDir = require("require-dir"),
             watch: "./src/img/svg/*.svg"
         },
         fonts: {
-            src: "./src/fonts/**/*.{woff,woff2,eot,ttf}",
+            src: "./src/fonts/**/*.{woff,woff2,eot,ttf,svg}",
             dist: "./dist/fonts/",
-            watch: "./src/fonts/**/*.{woff,woff2,eot,ttf}"
+            watch: "./src/fonts/**/*.{woff,woff2,eot,ttf,svg}"
         },
         favicons: {
             src: "./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}",

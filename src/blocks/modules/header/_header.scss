@@ -1,114 +1,124 @@
 .header {
-	background: white;
-	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
-	position: relative;
-	z-index: 1;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
 
-	&-inner {
-		max-width: 1169px;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 20px 0;
-	}
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1169px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
 
-	&-logo {
-		display: flex;
-		align-items: center;
+    &-logo {
+        display: flex;
+        align-items: center;
 
-		&__inner {
-			display: flex;
+        &__inner {
+            display: flex;
 
-			&:after {
-				content: "";
-				border-right: 1px solid black;
-				margin-left: 10px;
-			}
-		}
+            &:after {
+                content: "";
+                border-right: 1px solid #000;
+                margin-left: 10px;
+            }
+        }
 
-		&__text {
-			text-transform: uppercase;
-			margin-left: 10px;
-		}
-	}
+        &__text {
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+    }
 
-	&-search {
-		flex-grow: 1;
-		margin: 0 83px 0 63px;
+    &-search {
+        flex-grow: 1;
+        margin: 0 83px 0 63px;
 
-		input {
-			width: 100%;
-			background-image: url("img/search.png");
-			background-repeat: no-repeat;
-			background-position: 96% 11px;
-			border: 1px solid #D2DCDC;
-			box-sizing: border-box;
-			border-radius: 8px;
-			padding: 13px 0 11px 16px;
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid #d2dcdc;
+            padding: 13px 0 11px 16px;
+            background-image: url("img/search.png");
+            background-repeat: no-repeat;
+            background-position: 96% 11px;
+            border-radius: 8px;
 
-			&[placeholder="Поиск по сайту..."] {
-				color: #B3C2C2;
-				font-size: 14px;
-			}
-		}
-	}
+            &[placeholder="Поиск по сайту..."] {
+                color: #b3c2c2;
+                font-size: 14px;
+            }
+        }
+    }
 
-	&-info {
-		opacity: .5;
-	}
+    &-info {
+        opacity: .5;
+    }
 
-	&-notification {
-		position: relative;
+    &-notification {
+        position: relative;
 
-		span {
-			width: 11px;
-			height: 11px;
-			border-radius: 50%;
-			font-size: 8px;
-			background: #FF6363;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: white;
-			position: absolute;
-			right: -3px;
-			top: -7px;
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -7px;
+            right: -3px;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            font-size: 8px;
+            background: #ff6363;
+            color: #fff;
+        }
+    }
 
-		}
-	}
+    &-account {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 20px 0 20px 25px;
+        background: #fafafa;
+        margin-left: 20px;
+        margin-top: -20px;
+        margin-bottom: -20px;
 
-	&-account {
-		display: flex;
-		align-items: center;
-		background: #FAFAFA;
-		padding: 20px 0 20px 25px;
-		margin-left: 20px;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: calc(100vw/2 - 585px);
+            height: 100%;
+            background: #fafafa;
+        }
 
+        &__inner {
+            display: flex;
+            align-items: center;
+            margin-left: 23px;
+        }
+    }
 
-		&__inner {
-			display: flex;
-			align-items: center;
-			margin-left: 23px;
-		}
+    &-name {
+        margin-left: 10px;
+        max-width: 206px;
+        color: #a1b1b1;
+        font-size: 14px;
+    }
 
-	}
-
-	&-name {
-		margin-left: 10px;
-		max-width: 206px;
-		color: #A1B1B1;
-		font-size: 14px;
-	}
-
-	&-absolute {
-		position: absolute;
-		height: 100%;
-		width: 41.1%;
-		background: #FAFAFA;
-		right: 0;
-		top: 0;
-		z-index: -1;
-		display: none;
-	}
+    &-absolute {
+        display: none;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        width: 41.1%;
+        height: 100%;
+        background: #fafafa;
+    }
 }

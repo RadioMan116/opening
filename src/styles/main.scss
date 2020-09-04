@@ -6,3 +6,17 @@
 @import "base/general";
 @import "../blocks/components/components";
 @import "../blocks/modules/modules";
+
+
+
+
+body {
+	font-family: 'Graphik', sans-serif;
+	background: #FAFAFA;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1169px;
+	display: flex;
+}

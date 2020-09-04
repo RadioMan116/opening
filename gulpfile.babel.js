@@ -45,9 +45,9 @@ const requireDir = require("require-dir"),
             watch: "./src/img/svg/*.svg"
         },
         fonts: {
-            src: "./src/fonts/**/*.{woff,woff2}",
+            src: "./src/fonts/**/*.{woff,woff2,eot,ttf}",
             dist: "./dist/fonts/",
-            watch: "./src/fonts/**/*.{woff,woff2}"
+            watch: "./src/fonts/**/*.{woff,woff2,eot,ttf}"
         },
         favicons: {
             src: "./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}",
@@ -61,7 +61,9 @@ const requireDir = require("require-dir"),
 
 requireDir("./gulp-tasks/");
 
-export { paths };
+export {
+    paths
+};
 
 export const development = gulp.series("clean", "smart-grid",
     gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons"]),

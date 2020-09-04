@@ -1,0 +1,28 @@
+// @font-face {
+// 	font-family: Grafic;
+// 	src: url("../fonts/Graphik-Light.eot");
+// 	src: url("../fonts/Graphik-Light.eot?#iefix") format('embedded-opentype');
+// 	src: url("../fonts/Graphik-Light.woff") format("woff");
+// 	src: url("../fonts/Graphik-Light.woff2");
+// 	src: url("../fonts/Graphik-Light.ttf") format("truetype");
+// }
+
+@font-face {
+	font-family: 'Graphik';
+	src: url('../fonts/Graphik-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Graphik-Light.woff2') format('woff2'),
+		url('../fonts/Graphik-Light.woff') format('woff'),
+		url('../fonts/Graphik-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+// @font-face {
+// 	font-family: "HelveticaNeueCyr-Light";
+// 	src: url('../fonts/helvetica/HelveticaNeueCyr-Light.eot');
+// 	src: url('../fonts/helvetica/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+// 		url('../fonts/helvetica/HelveticaNeueCyr-Light.woff') format('woff'),
+// 		url('../fonts/helvetica/HelveticaNeueCyr-Light.ttf') format('truetype');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }

@@ -1,0 +1,13 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+
+    &-link {
+        color: #3f3f3f;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 21px 53px 21px 21px;
+        cursor: pointer;
+    }
+}

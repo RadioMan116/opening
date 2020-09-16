@@ -1,0 +1,33 @@
+.leadership-section-text {
+
+	&.title {
+		font-size: 22px;
+		color: #3C3C3C;
+		margin-bottom: 15px;
+		font-weight: 800;
+	}
+
+	&.desc {
+		font-size: 16px;
+		color: #546161;
+		margin-bottom: 30px;
+	}
+
+	&__list {
+		list-style-type: none;
+		counter-reset: num;
+		padding-left: 0;
+		margin-bottom: 30px;
+
+		li {
+			margin-bottom: 5px;
+
+			&:before {
+				content: counter(num) ' ';
+				counter-increment: num;
+				padding-right: 5px;
+				color: #AFD2E1;
+			}
+		}
+	}
+}

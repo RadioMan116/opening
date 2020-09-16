@@ -1,0 +1,7 @@
+mixin tabs-buttons(button= false, text, ...buttons)
+	ul.tabs-title
+		each item, i in buttons
+			li.tabs-button
+				a(href="#tabs-" + i)= item
+		if button == true
+			.button-blue= text

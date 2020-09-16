@@ -1,0 +1,19 @@
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 14px;
+	color: #3C3C3C;
+	border-top: 1px solid #FAFAFA;
+	border-bottom: 1px solid #FAFAFA;
+	padding: 20px 0 9px;
+
+	&__item {
+		background: rgba(210, 220, 220, 0.4);
+		padding: 3px;
+		margin: 0 10px 11px 0;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

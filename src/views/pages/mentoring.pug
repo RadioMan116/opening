@@ -1,0 +1,90 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Mentoring";
+
+block content
+	include ../../blocks/modules/header/header
+	.wrapper
+		include ../../blocks/modules/sidebar/sidebar
+		.content
+			//- include ../../blocks/components/bread-crumbs/bread-crumbs
+			//- +bread-crumbs("Главная", "Вебинары и тренинги", "Наставничество")
+			include ../../blocks/components/main-banner/main-banner
+			+main-banner("1.png")
+			include ../../blocks/components/title-button/title-button
+			+title-button("Учебная программа")
+			include ../../blocks/components/main-title/main-title
+			+main-title("Наставничество")
+			include ../../blocks/components/tabs-buttons/tabs-buttons
+			.tabs-buttons(id="tabs")
+				+tabs-buttons("", "", "Основные сведения", "Материалы", "Мероприятия", "Отзывы", "Компетенции")
+				#tabs-0.tabs-body
+					.mentoring
+						.mentoring-block
+							.mentoring-block__title
+								span Тип
+								span Учебная организация
+							.mentoring-block__desc
+								span Очное обучение
+								span
+									a(href="#") ПАО Банк ФК “Открытие”
+							.mentoring-block__title
+								span Часов
+								span Стоимость
+							.mentoring-block__desc
+								span 8
+								span 0 руб. за  участника
+						include ../../blocks/components/leadership-section-text/leadership-section-text
+						+leadership-section-text("Цель курса", "title")
+						+leadership-section-text("Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову.", "desc")
+						+leadership-section-text("Содержание курса", "title")
+						include ../../blocks/modules/list/list
+						+leadership-section-text("Время прохождения", "title")
+						+leadership-section-text("15 минут", "desc")
+						include ../../blocks/modules/tags/tags
+						.mentoring-like
+							img(src="/img/svg/like-blue.svg", alt="#")
+							include ../../blocks/components/social/social
+							+social()
+				#tabs-1.tabs-body
+					.leadership-materials__section
+							.leadership-materials__section-inner
+								include ../../blocks/components/leadership-materials/leadership-materials
+								+leadership-materials("pdf.svg", "Брендбук компании", "Скачать", "view.svg", "Посмотреть")
+								+leadership-materials("open-icon.svg", "Логотипы компаний", "Выбрать", "download.svg", "Скачать все")
+								+leadership-materials("ppt.svg", "Набор иконок", "Скачать", "view.svg", "Посмотреть")
+							.leadership-materials__section-inner
+								+leadership-materials("ppt.svg", "Шаблоны презентаций", "Выбрать", "download.svg", "Скачать все")
+								+leadership-materials("pdf.svg", "Шаблоны грамот", "Выбрать", "download.svg", "Скачать все")
+				#tabs-2.tabs-body
+					.mentoring-table
+						.mentoring-table__inner
+							.mentoring-table__title
+								span Название
+							.mentoring-table__date Дата
+							.mentoring-table__status Статус
+							.mentoring-table__sum Сумма
+						- var list = ["Наставничество РБ", "Наставничество МСК", "Наставничество СПБ", "Наставничество Казань"]
+						- for (var x = 0; x < 6; x++)
+							each item in list
+								.mentoring-table__inner
+									.mentoring-table__title
+										a(href="#")= item
+									.mentoring-table__date 19.12.2019, 16:01
+									.mentoring-table__status Завершено
+									.mentoring-table__sum 0 руб.
+						include ../../blocks/modules/pagination/pagination
+						include ../../blocks/modules/tags/tags
+						.mentoring-like
+							img(src="/img/svg/like-blue.svg", alt="#")
+							include ../../blocks/components/social/social
+							+social()
+				#tabs-3.tabs-body
+				#tabs-4.tabs-body
+			include ../../blocks/modules/comments/comments
+
+	include ../../blocks/modules/footer/footer
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

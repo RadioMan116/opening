@@ -1,0 +1,104 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Instruments";
+
+block content
+	include ../../blocks/modules/header/header
+	.wrapper
+		include ../../blocks/modules/sidebar/sidebar
+		.content
+			//- include ../../blocks/components/bread-crumbs/bread-crumbs
+			//- +bread-crumbs("Главная", "Вебинары и тренинги", "Мероприятия", "Инструменты наставничества РБ (г. Хабаровск)")
+			include ../../blocks/components/main-banner/main-banner
+			+main-banner("1.png")
+			include ../../blocks/components/title-button/title-button
+			+title-button("Мероприятие")
+			include ../../blocks/components/main-title/main-title
+			+main-title("Инструменты наставничества РБ (г. Хабаровск)")
+			include ../../blocks/components/tabs-buttons/tabs-buttons
+			.tabs-buttons(id="tabs")
+				+tabs-buttons("", "", "Информация", "Описание", "Участники")
+				#tabs-0.tabs-body
+					.instruments
+						.mentoring-block
+							.mentoring-block__title
+								span Тип
+								span Учебная организация
+							.mentoring-block__desc
+								span Очное обучение
+								span
+									a(href="#") ПАО Банк ФК “Открытие”
+							.mentoring-block__title
+								span Статус
+								span Вебинар/Тренинг
+							.mentoring-block__desc.red
+								span Завершено
+								span
+									a(href="#") Наставничество
+							.mentoring-block__title
+								span Проводится
+								span Ваша роль
+							.mentoring-block__desc
+								span 24.10.2019, 10:00–12:30
+								span Вы не являетесь участником данного мероприятия
+							.mentoring-block__title
+								span Форма проведения
+								span Место проведения
+							.mentoring-block__desc
+								span Вебинар
+								span Хабаровск, рабочее место сотрудника
+						.instruments-title Преподаватели
+						include ../../blocks/components/teacher/teacher
+						+teacher("ava.png", "Иван Кенонов", "Должность")
+						+teacher("ava2.png", "Василиса Юрисева", "Должность")
+						+teacher("ava3.png", "Алина Панина", "Должность")
+						.instruments-subtitle Участники встречи
+						.instruments-member
+							.instruments-member__item
+								img(src="/img/member-img2.png", alt="#")
+							.instruments-member__item
+								img(src="/img/member-img.png", alt="#")
+							.instruments-member__item
+								img(src="/img/member-img3.png", alt="#")
+							.instruments-member__item
+								img(src="/img/member-img.png", alt="#")
+							.instruments-member__item
+								img(src="/img/member-img2.png", alt="#")
+						.instruments-button
+							a(href="#") Посмотреть всех
+				#tabs-1.tabs-body
+					.instruments
+						include ../../blocks/components/leadership-section-text/leadership-section-text
+						+leadership-section-text("Цель курса", "title")
+						+leadership-section-text("Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову.", "desc")
+						+leadership-section-text("Содержание курса", "title")
+						include ../../blocks/modules/list/list
+						+leadership-section-text("Целевая аудитория", "title")
+						+leadership-section-text("Все сотрудники банка", "desc")
+						+leadership-section-text("Наличие тестирования", "title")
+						+leadership-section-text("Упранения внутри курса", "desc")
+						+leadership-section-text("Время прохождения", "title")
+						+leadership-section-text("15 минут", "desc")
+				#tabs-2.tabs-body
+					.instruments
+						.instruments-search__title Участники
+							span (10 чел.)
+						.instruments-search__input
+							input(type="text" placeholder="Найти в списке...")
+						.instruments-search__inner.green
+							+teacher("ava3.png", "Алина Панина", "Должность")
+							span Потвердил участие
+							.instruments-search__button Написать
+						.instruments-search__inner.black
+							+teacher("ava3.png", "Алина Панина", "Должность")
+							span Ожидается ответ
+							.instruments-search__button Написать
+						.instruments-search__inner.red
+							+teacher("ava3.png", "Алина Панина", "Должность")
+							span Отклонил участие
+							.instruments-search__button Написать
+	include ../../blocks/modules/footer/footer
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

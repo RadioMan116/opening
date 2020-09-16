@@ -1,0 +1,172 @@
+extends ../layouts/default
+
+block variables
+	- const title = "My certificates";
+
+block content
+	include ../../blocks/modules/header/header
+	.wrapper
+		include ../../blocks/modules/sidebar/sidebar
+		.content
+			include ../../blocks/components/main-title/main-title
+			+main-title("Мои сертификаты")
+			include ../../blocks/components/tabs-buttons/tabs-buttons
+			.tabs-buttons(id="tabs")
+				+tabs-buttons("no-button", "", "ПОД/ФТ", "Касса", "Охрана труда", "Электробезопасность")
+				#tabs-0.tabs-body
+					.my-certificates
+						.tabs-body__wrap
+							.tabs-body__inner
+								.tabs-body__course Курс
+								.tabs-body__info Оттиск ЭП
+								.tabs-body__date-to Дата назначения
+								.tabs-body__date-after Дата прохождения
+								.tabs-body__act Действия
+							.tabs-body__inner
+								.tabs-body__course
+									span  Наставничество
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Анализ и предотвращение ошибок
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Климат в коллективе
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Наставничество РБ
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Наставничество РБ
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Анализ и предотвращение топ ошибок
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Лидерство
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Климат в коллективе
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Наставничество
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Анализ и предотвращение ошибок
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span  Климат в коллективе
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+							.tabs-body__inner
+								.tabs-body__course
+									span Наставничество РБ
+								.tabs-body__info какое-то значение
+								.tabs-body__date-to 19.12.2019
+								.tabs-body__date-after 19.12.2019
+								.tabs-body__act
+									a(href="#") Скачать
+						include ../../blocks/modules/pagination/pagination
+				#tabs-1.tabs-body
+					.my-certificates
+						.tabs-body__wrap
+						.tabs-body__inner
+							.tabs-body__course Курс
+							.tabs-body__info Оттиск ЭП
+							.tabs-body__date-to Дата назначения
+							.tabs-body__date-after Дата прохождения
+							.tabs-body__act Действия
+						.tabs-body__inner
+							.tabs-body__course
+								span  Климат в коллективе
+							.tabs-body__info какое-то значение
+							.tabs-body__date-to 19.12.2019
+							.tabs-body__date-after 19.12.2019
+				#tabs-2.tabs-body
+					.my-certificates
+						.tabs-body__wrap
+						.tabs-body__inner
+							.tabs-body__course Курс
+							.tabs-body__info Оттиск ЭП
+							.tabs-body__date-to Дата назначения
+							.tabs-body__date-after Дата прохождения
+							.tabs-body__act Действия
+						.tabs-body__inner
+							.tabs-body__course
+								span  Климат в коллективе
+							.tabs-body__info какое-то значение
+							.tabs-body__date-to 19.12.2019
+							.tabs-body__date-after 19.12.2019
+				#tabs-3.tabs-body
+					.my-certificates
+						.tabs-body__wrap
+						.tabs-body__inner
+							.tabs-body__course Курс
+							.tabs-body__info Оттиск ЭП
+							.tabs-body__date-to Дата назначения
+							.tabs-body__date-after Дата прохождения
+							.tabs-body__act Действия
+						.tabs-body__inner
+							.tabs-body__course
+								span  Климат в коллективе
+							.tabs-body__info какое-то значение
+							.tabs-body__date-to 19.12.2019
+							.tabs-body__date-after 19.12.2019
+
+	include ../../blocks/modules/footer/footer
+
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

@@ -1,0 +1,24 @@
+.star {
+	z-index: 4;
+
+	&.white {
+		background: url("/img/svg/star-white.svg") no-repeat;
+		width: 21px;
+		height: 20px;
+		position: absolute;
+		top: 12px;
+		right: 11px;
+	}
+
+	&.blue {
+		background: url("/img/svg/star-blue.svg") no-repeat;
+		border-radius: 0px 0px 0px 8px;
+		width: 35px;
+		height: 35px;
+		background-position: 50%;
+		background-color: #fff;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

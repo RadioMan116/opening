@@ -1,0 +1,40 @@
+.comments
+	.comments-title Комментарии
+		span (76)
+	.comments-item
+		.comments-item__img
+			img(src="img/header-account-logo.png" alt="logo")
+		.comments-item__inner
+			.comments-item__name Константин Константинопольский
+			.comments-item__text Интересная новость, прочитал с большим удовольствием
+			.comments-item__wrap
+				//- include ../../components/date/date
+				//- +date("Вчера в 15:46")
+				img(src="/img/svg/like-blue.svg", alt="#")
+				include ../../components/social/social
+				+social()
+				.answer Ответить
+				.more Еще
+	.comments-item.padding
+		.comments-item__img
+			img(src="img/header-account-logo.png" alt="logo")
+		.comments-item__inner
+			.comments-item__name Андрей Никитин
+			.comments-item__text Ну да, ну да...
+			.comments-item__wrap
+				//- include ../../components/date/date
+				//- +date("Вчера в 15:46")
+				img(src="/img/svg/like-blue.svg", alt="#")
+				include ../../components/social/social
+				+social()
+				.answer Ответить
+				.more Еще
+			.comments-item__button Раскрыть ветку
+	.comments-item__button Показать все комментарии
+	.comment-write
+		.comment-write__img
+			img(src="img/header-account-logo.png" alt="logo")
+		.comment-write__input
+			input(type="text" placeholder="Напишите комментарий...")
+		.comment-write__button
+			img(src="/img/svg/send.svg", alt="#")

@@ -1,0 +1,10 @@
+mixin news(nameClass, title, className)
+	.news(class= className )
+		.news-title= title
+		.news-social
+			//- include ../date/date
+			//- +date("04.02.2020", "light-gray")
+			include ../social/social
+			+social(nameClass)
+		include ../star/star
+		+star("white")

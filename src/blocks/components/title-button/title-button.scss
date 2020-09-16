@@ -1,0 +1,26 @@
+.title-button {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+
+	&__item {
+		font-size: 24px;
+		color: #3F3F3F;
+		border-right: 1px solid #D2DCDC;
+		padding-right: 17px;
+		margin-right: 17px;
+		font-weight: 800;
+	}
+
+	&__link {
+
+		a {
+			font-size: 16px;
+			color: #00BEF0;
+			text-decoration: none;
+			background: url("/img/svg/arrow-left.svg") no-repeat;
+			background-position-y: 50%;
+			padding-left: 18px;
+		}
+	}
+}

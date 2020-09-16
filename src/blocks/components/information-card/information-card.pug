@@ -1,0 +1,14 @@
+mixin card(title, text, number, className, view= false)
+	.information-card(class=className ? className : "")
+		.information-card__title= title
+		if view == true
+			.information-card__progress
+				span
+		else
+			.information-card__text= text
+		.information-card__number= number
+	//- if view == true
+	//- 	.information-card
+	//- 		.information-card__title= title
+	//- 		.information-card__text= text
+	//- 		.information-card__number= number

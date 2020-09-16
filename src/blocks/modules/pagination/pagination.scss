@@ -1,0 +1,38 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	color: #757678;
+
+
+	&-button {
+
+		&__left {
+			background: url("/img/svg/pagin-button-left.svg");
+			width: 20px;
+			height: 20px;
+			background-position: center;
+		}
+
+		&__right {
+			background: url("/img/svg/pagin-button-left.svg");
+			width: 20px;
+			height: 20px;
+			background-position: center;
+			margin-left: 13px;
+			transform: rotate(180deg);
+		}
+	}
+
+	&-page {
+		margin-left: 13px;
+
+		&.active {
+			color: #3C3C3C;
+		}
+	}
+
+	&-more {
+		margin-left: 13px;
+	}
+}

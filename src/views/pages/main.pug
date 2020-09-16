@@ -10,6 +10,13 @@ block content
 		include ../../blocks/modules/sidebar/sidebar
 		.content
 			include ../../blocks/modules/main-banner-slider/main-banner-slider
+
+			.news
+				include ../../blocks/components/news/news
+				+news("small", "2", "large")
+				+news("small", "2", "small")
+			include ../../blocks/components/vacansiec-card/vacansiec-card
+			+vacansiec-card("1","2","3", "4", "5")
 	include ../../blocks/modules/footer/footer
 
 block scripts

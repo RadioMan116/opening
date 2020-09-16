@@ -1,0 +1,76 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Webinars";
+
+block content
+	include ../../blocks/modules/header/header
+
+	.wrapper
+		include ../../blocks/modules/sidebar/sidebar
+		.content
+			//- include ../../blocks/components/bread-crumbs/bread-crumbs
+			//- +bread-crumbs("Главная", "Вебинары и тренинги", "Анализ и предотвращение топ-ошибок сотрудников при работе с СУО")
+			include ../../blocks/components/main-banner/main-banner
+			+main-banner("1.png")
+			include ../../blocks/components/title-button/title-button
+			+title-button("Электронный курс")
+			include ../../blocks/components/main-title/main-title
+			+main-title("Анализ и предотвращение топ-ошибок сотрудников при работе с СУО")
+			include ../../blocks/components/tabs-buttons/tabs-buttons
+			.tabs-buttons(id="tabs")
+				+tabs-buttons(true, "Начать обучение", "Основные сведения", "История обучения")
+				.help Данный курс доступен для самостоятельного назначения
+				#tabs-0.tabs-body
+					.webinars
+						.webinars-title Цель курса
+						.webinars-text Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову.
+						.webinars-title Содержание курса
+						.webinars-list
+							include ../../blocks/modules/list/list
+						.webinars-title Время прохождения
+						.webinars-text 15 минут
+						.webinars-button
+							.webinars-button__item Розничный бизнес
+							.webinars-button__item Онлайн курс
+							.webinars-button__item Банк открытие
+						.webinars-inner
+							.webinars-date
+								//- include ../../blocks/components/date/date
+								//- +date("13.08.2020 — 14.08.2020")
+							.webinars-like
+								img(src="/img/svg/like-blue.svg", alt="#")
+								include ../../blocks/components/social/social
+								+social()
+				#tabs-1.tabs-body
+					.webinars
+						.webinars-title Ваша история изучения данного курса
+						.webinars-text История прохождения пуста
+						.webinars-block
+							.webinars-block__item
+								//- +date("14.08.2020, 15:34 - ")
+								span Активность
+							.webinars-block__item
+								//- +date("14.08.2020, 15:34 - ")
+								span Начат
+							.webinars-block__item
+								//- +date("14.08.2020, 15:34 - ")
+								span Пройден
+						.webinars-button
+							.webinars-button__item Розничный бизнес
+							.webinars-button__item Онлайн курс
+							.webinars-button__item Банк открытие
+						.webinars-inner
+							.webinars-date
+								//- include ../../blocks/components/date/date
+								//- +date("13.08.2020 — 14.08.2020")
+							.webinars-like
+								img(src="/img/svg/like-blue.svg", alt="#")
+								include ../../blocks/components/social/social
+								+social()
+			include ../../blocks/modules/comments/comments
+
+	include ../../blocks/modules/footer/footer
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

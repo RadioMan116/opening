@@ -1,0 +1,75 @@
+.news-card {
+	position: relative;
+	margin-right: 30px;
+	box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.03),
+		0px 3px 10px rgba(164, 164, 164, 0.03);
+	border-radius: 8px;
+	background: #fff;
+	overflow: hidden;
+	margin-bottom: 48px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&__inner {
+		padding: 10px 20px 15px;
+		flex-direction: column;
+		display: flex;
+		height: 100%;
+	}
+
+	&__title {
+		font-size: 18px;
+		color: #3C3C3C;
+	}
+
+	&__text {
+		font-size: 14px;
+		color: #8D9B9B;
+		margin: 10px 0 15px;
+	}
+
+	&__social-date {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 13px;
+		border-top: 1px solid #F4F4F4;
+		margin-top: auto;
+
+		.social {
+			font-size: 12px;
+			color: rgba(60, 60, 60, 0.5);
+
+			&-like {
+				background: url("/img/svg/like-gray.svg") no-repeat;
+				padding-left: 19px;
+
+				&.active {
+					background: url("/img/svg/like-blue-paint.svg") no-repeat;
+				}
+			}
+
+			&-comment {
+				background: url("/img/svg/comment-gray.svg") no-repeat;
+				padding-left: 19px;
+				margin: 0 10px 0 12px;
+			}
+
+			&-views {
+				background: url("/img/svg/views-gray.svg") no-repeat;
+				padding-left: 19px;
+				background-position-y: center;
+			}
+		}
+	}
+
+	&__like-blue {
+		margin-right: -13px;
+		height: 15px;
+	}
+}

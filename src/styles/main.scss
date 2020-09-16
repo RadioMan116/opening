@@ -22,3 +22,12 @@ body {
 	max-width: 1169px;
 	display: flex;
 }
+
+.content {
+	max-width: 870px;
+	width: 100%;
+
+	&:last-child {
+		margin-bottom: 100px;
+	}
+}

@@ -1,0 +1,25 @@
+.teacher {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+
+	&-info {
+		margin-left: 10px;
+	}
+
+	&-name {
+		font-size: 14px;
+		color: #3C3C3C;
+		margin-bottom: 4px;
+	}
+
+	&-position {
+		font-size: 14px;
+		color: #A1B1B1;
+
+	}
+
+	&:last-child {
+		margin-bottom: 30px;
+	}
+}

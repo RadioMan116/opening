@@ -1,0 +1,14 @@
+mixin vacansiec-card(title, subd, dir, geo, time)
+	.vacansiec-card
+		.vacansiec-card__title= title
+		.vacansiec-card__subdivision= subd
+		.vacansiec-card__direction= dir
+		.vacansiec-card__geo= geo
+		.vacansiec-card__inner
+			.vacansiec-card__button
+				.vacansiec-card__button-blue Отликнуться
+				.vacansiec-card__button-white
+			//- include ../date/date
+			//- +date("14.08.2020, "+ time)
+		include ../star/star
+		+star("blue")

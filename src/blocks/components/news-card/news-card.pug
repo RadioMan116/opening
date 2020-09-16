@@ -1,0 +1,16 @@
+mixin news-card(nameClass, className, title, text, img="news-card-img-default.png")
+	.news-card(class= className)
+		.news-card__img
+			img(src="/img/"+img, alt="#")
+		.news-card__inner
+			.news-card__title= title
+			.news-card__text= text
+			//- include ../date/date
+			include ../social/social
+			.news-card__social-date
+				//- +date("04.04.2020", "gray")
+				.news-card__like-blue
+					img(src="/img/svg/like-blue.svg", alt="#")
+				+social(nameClass)
+		include ../star/star
+		+star("blue")

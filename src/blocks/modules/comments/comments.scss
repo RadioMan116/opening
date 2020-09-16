@@ -1,0 +1,156 @@
+.comments {
+	padding: 48px 132px 0;
+
+	&-title {
+		font-size: 22px;
+		color: #3C3C3C;
+		margin-bottom: 30px;
+
+		span {
+			color: #8D9B9B;
+		}
+	}
+
+	&-item {
+		display: flex;
+
+		&__img {}
+
+		&__inner {
+			margin-left: 10px;
+			width: 100%;
+
+			span {
+				font-size: 12px;
+				color: rgba(60, 60, 60, 0.5);
+			}
+		}
+
+		&__name {
+			font-size: 16px;
+			color: #3C3C3C;
+			font-weight: 800;
+			margin-bottom: 7px;
+		}
+
+		&__text {
+			font-size: 16px;
+			color: #3C3C3C;
+			margin-bottom: 14px;
+		}
+
+		&.padding {
+			padding-left: 55px;
+			margin-top: 14px;
+			margin-bottom: 30px;
+
+			.comments-item__button {
+				margin-top: 13px;
+			}
+		}
+
+		&__button {
+			text-align: center;
+			font-size: 14px;
+			color: #00BEF0;
+		}
+
+		&__wrap {
+			display: flex;
+			align-items: center;
+
+			img {
+				margin-left: auto;
+				margin-right: 3px;
+			}
+
+			.social {
+				color: rgba(60, 60, 60, 0.5);
+
+				&-like {
+					background: url("/img/svg/like-gray.svg") no-repeat;
+				}
+
+				&-comment,
+				&-views {
+					display: none;
+				}
+			}
+
+			.answer {
+				font-size: 12px;
+				color: rgba(60, 60, 60, 0.5);
+				display: flex;
+				align-items: center;
+
+				&:before {
+					content: "";
+					background: rgba(60, 60, 60, 0.5);
+					width: 3px;
+					height: 3px;
+					margin: 0 12px;
+				}
+			}
+
+			.more {
+				font-size: 12px;
+				color: rgba(60, 60, 60, 0.5);
+				display: flex;
+				align-items: center;
+				background: url("/img/svg/arrow-down-gray.svg") no-repeat;
+				background-position-x: right;
+				background-position-y: center;
+				padding-right: 14px;
+
+				&:before {
+					content: "";
+					background: rgba(60, 60, 60, 0.5);
+					width: 3px;
+					height: 3px;
+					margin: 0 12px;
+				}
+			}
+		}
+	}
+
+	.social {}
+
+	.social-like {}
+
+	.social-comment {}
+
+	.social-views {}
+
+	.comment-write {
+		background: #FFFFFF;
+		border-radius: 8px;
+		padding: 10px 20px;
+		display: flex;
+		align-items: center;
+		margin-top: 5px;
+
+		&__img {}
+
+		&__input {
+			width: 100%;
+			margin-left: 15px;
+
+			input {
+				width: 100%;
+				border: 1px solid #D2DCDC;
+				box-sizing: border-box;
+				border-radius: 8px;
+				padding: 10px 0 10px 20px;
+				background: url("/img/svg/clip.svg") no-repeat 88%, url("/img/svg/smile.svg") no-repeat 95%;
+
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+
+		&__button {
+			margin-left: 20px;
+		}
+	}
+}

@@ -8,7 +8,7 @@
 
 	&.small {
 
-		background: url("/img/news-bg-small.png") no-repeat;
+		background: url("../img/news-bg-small.png") no-repeat;
 		background-size: cover;
 		margin-right: 30px;
 		flex-shrink: 1.8;
@@ -29,7 +29,7 @@
 
 	&.large {
 
-		background: url("/img/news-bg.png") no-repeat;
+		background: url("../img/news-bg.png") no-repeat;
 		background-size: cover;
 		position: relative;
 

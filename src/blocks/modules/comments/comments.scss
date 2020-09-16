@@ -68,7 +68,7 @@
 				color: rgba(60, 60, 60, 0.5);
 
 				&-like {
-					background: url("/img/svg/like-gray.svg") no-repeat;
+					background: url("../img/svg/like-gray.svg") no-repeat;
 				}
 
 				&-comment,
@@ -97,7 +97,7 @@
 				color: rgba(60, 60, 60, 0.5);
 				display: flex;
 				align-items: center;
-				background: url("/img/svg/arrow-down-gray.svg") no-repeat;
+				background: url("../img/svg/arrow-down-gray.svg") no-repeat;
 				background-position-x: right;
 				background-position-y: center;
 				padding-right: 14px;
@@ -141,7 +141,7 @@
 				box-sizing: border-box;
 				border-radius: 8px;
 				padding: 10px 0 10px 20px;
-				background: url("/img/svg/clip.svg") no-repeat 88%, url("/img/svg/smile.svg") no-repeat 95%;
+				background: url("../img/svg/clip.svg") no-repeat 88%, url("../img/svg/smile.svg") no-repeat 95%;
 
 				&:focus {
 					outline: none;

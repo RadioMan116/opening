@@ -2,7 +2,7 @@
 	z-index: 4;
 
 	&.white {
-		background: url("/img/svg/star-white.svg") no-repeat;
+		background: url("../img/svg/star-white.svg") no-repeat;
 		width: 21px;
 		height: 20px;
 		position: absolute;
@@ -11,7 +11,7 @@
 	}
 
 	&.blue {
-		background: url("/img/svg/star-blue.svg") no-repeat;
+		background: url("../img/svg/star-blue.svg") no-repeat;
 		border-radius: 0px 0px 0px 8px;
 		width: 35px;
 		height: 35px;

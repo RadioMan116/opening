@@ -46,22 +46,22 @@
 			color: rgba(60, 60, 60, 0.5);
 
 			&-like {
-				background: url("/img/svg/like-gray.svg") no-repeat;
+				background: url("../img/svg/like-gray.svg") no-repeat;
 				padding-left: 19px;
 
 				&.active {
-					background: url("/img/svg/like-blue-paint.svg") no-repeat;
+					background: url("../img/svg/like-blue-paint.svg") no-repeat;
 				}
 			}
 
 			&-comment {
-				background: url("/img/svg/comment-gray.svg") no-repeat;
+				background: url("../img/svg/comment-gray.svg") no-repeat;
 				padding-left: 19px;
 				margin: 0 10px 0 12px;
 			}
 
 			&-views {
-				background: url("/img/svg/views-gray.svg") no-repeat;
+				background: url("../img/svg/views-gray.svg") no-repeat;
 				padding-left: 19px;
 				background-position-y: center;
 			}

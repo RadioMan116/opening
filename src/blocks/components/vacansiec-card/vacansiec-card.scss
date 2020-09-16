@@ -52,18 +52,18 @@
 		}
 
 		&__subdivision {
-			background: url("/img/svg/subd.svg") no-repeat;
+			background: url("../img/svg/subd.svg") no-repeat;
 		}
 
 		&__direction {
-			background: url("/img/svg/dir.svg") no-repeat;
+			background: url("../img/svg/dir.svg") no-repeat;
 		}
 
 		&__geo {
 			font-size: 14px;
 			color: #00BEF0;
 			margin-bottom: 23px;
-			background: url("/img/svg/geo.svg") no-repeat;
+			background: url("../img/svg/geo.svg") no-repeat;
 			padding-left: 30px;
 			height: 24px;
 			display: flex;
@@ -101,7 +101,7 @@
 				box-sizing: border-box;
 				border-radius: 0px 8px 8px 0px;
 				padding: 21px;
-				background: url("/img/svg/arrow-down.svg") no-repeat;
+				background: url("../img/svg/arrow-down.svg") no-repeat;
 				background-position: 50%;
 			}
 		}

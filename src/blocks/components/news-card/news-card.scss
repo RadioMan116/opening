@@ -11,6 +11,10 @@
 	flex-direction: column;
 	width: 100%;
 
+	&__list {
+		display: flex;
+	}
+
 	&:last-child {
 		margin-right: 0;
 	}

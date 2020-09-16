@@ -11,12 +11,25 @@ block content
 		.content
 			include ../../blocks/modules/main-banner-slider/main-banner-slider
 
-			.news
+			.news-inner
 				include ../../blocks/components/news/news
-				+news("small", "2", "large")
 				+news("small", "2", "small")
-			include ../../blocks/components/vacansiec-card/vacansiec-card
-			+vacansiec-card("1","2","3", "4", "5")
+				+news("small", "2", "large ")
+			.news-card__list
+				include ../../blocks/components/news-card/news-card
+				+news-card("1", "2", "3", "4")
+				+news-card("1", "2", "3", "4")
+				+news-card("1", "2", "3", "4")
+			.vacansiec-list
+				include ../../blocks/components/vacansiec-card/vacansiec-card
+				+vacansiec-card("1","2","3", "4", "5")
+				+vacansiec-card("1","2","3", "4", "5")
+				+vacansiec-card("1","2","3", "4", "5")
+				+vacansiec-card("1","2","3", "4", "5")
+			.news-inner
+				+news-card("1", "2", "3", "")
+				+news-card("1", "2", "3", "")
+				+news-card("1", "2", "3", "")
 	include ../../blocks/modules/footer/footer
 
 block scripts

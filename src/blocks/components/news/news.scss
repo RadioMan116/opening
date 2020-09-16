@@ -6,12 +6,16 @@
 	border-radius: 8px;
 	margin-bottom: 30px;
 
+	&-inner {
+		display: flex;
+	}
+
 	&.small {
 
 		background: url("../img/news-bg-small.png") no-repeat;
 		background-size: cover;
 		margin-right: 30px;
-		flex-shrink: 1.8;
+		flex-grow: 1;
 		position: relative;
 
 		&:after {
@@ -32,6 +36,7 @@
 		background: url("../img/news-bg.png") no-repeat;
 		background-size: cover;
 		position: relative;
+		flex-grow: 2;
 
 		&:after {
 			content: "";

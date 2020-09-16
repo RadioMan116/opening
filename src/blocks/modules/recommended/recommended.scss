@@ -1,5 +1,9 @@
 .recommended {
 
+	&-list {
+		display: flex;
+	}
+
 	&-title {
 		display: flex;
 		justify-content: space-between;

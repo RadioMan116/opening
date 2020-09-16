@@ -1,5 +1,11 @@
 .vacansiec {
 
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 48px;
+	}
+
 	&-title {
 		display: flex;
 		justify-content: space-between;
